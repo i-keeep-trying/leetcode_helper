@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gemini API Setup</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f7fa;
+      padding: 16px;
+      width: 300px;
+      box-sizing: border-box;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    label {
+      font-size: 14px;
+      display: block;
+      margin-bottom: 6px;
+      color: #555;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
+      margin-bottom: 12px;
+      transition: border-color 0.2s;
+    }
+
+    input[type="text"]:focus {
+      border-color: #4285f4;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4285f4;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+    }
+
+    button:hover {
+      background-color: #3367d6;
+    }
+
+    #status {
+      margin-top: 10px;
+      font-size: 13px;
+    }
+
+    .success {
+      color: #0f9d58;
+    }
+
+    .error {
+      color: #d93025;
+    }
+  </style>
+</head>
+<body>
+  <form id="apiKeyForm">
+  <label for="apiKeyInput">Your Gemini API Key</label>
+  <input type="text" id="apiKeyInput" placeholder="Paste your key here..." required>
+  <button type="submit">Save API Key</button>
+  </form>
+  <p id="status"></p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
